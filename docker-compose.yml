@@ -1,0 +1,14 @@
+services:
+  redis: 
+    image: redis:3.2
+    ports: 
+      - "6379:6379"
+  mongo:
+    image: mongo:3.6
+    ports: 
+      - "27017:27017"
+  # 源 https://raw.githubusercontent.com/wurstmeister/kafka-docker/master/docker-compose.yml
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
