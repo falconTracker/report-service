@@ -102,7 +102,7 @@ module.exports = () => {
     clients: {
       db3: {
         // 单机部署
-        url: 'mongodb://127.0.0.1:27018/performance',
+        url: 'mongodb://127.0.0.1:27017/performance',
         // 副本集 读写分离
         // url: 'mongodb://127.0.0.1:28100,127.0.0.1:28101,127.0.0.1:28102/performance?replicaSet=rs1',
         // 集群分片
