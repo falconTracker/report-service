@@ -1,0 +1,20 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "no-constant-condition": 0,
+    "eqeqeq": 0,
+    "indent": [
+      "error",
+        2
+    ],
+    "linebreak-style": 0
+  },
+  "plugins": [
+    "html"
+  ],
+  "settings": {
+    "html/html-extensions": [
+      ".html"
+    ]
+  }
+}

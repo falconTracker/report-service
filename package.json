@@ -1,0 +1,45 @@
+{
+  "name": "report-service",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg-cors": "^3.0.1",
+    "md5": "^2.3.0",
+    "ua-parser-js": "^2.0.0",
+    "egg": "^3.17.5",
+    "egg-mongoose": "^4.0.1",
+    "egg-redis": "^2.6.0",
+    "egg-scripts": "2"
+  },
+  "devDependencies": {
+    "egg-bin": "6",
+    "egg-mock": "5",
+    "eslint": "8",
+    "eslint-config-egg": "13",
+    "eslint-plugin-html": "^8.1.2",
+    "lerna": "^8.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "npx egg-scripts start --daemon --title=egg-server-report-service",
+    "stop": "npx egg-scripts stop --title=egg-server-report-service",
+    "dev": "npx egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "npx egg-bin test",
+    "cov": "npx egg-bin cov",
+    "lint": "npx eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "leo",
+  "license": "MIT"
+}
