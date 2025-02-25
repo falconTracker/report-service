@@ -285,8 +285,7 @@ version 为 report-service 中 package.json 中的 version 值。
                     url: 'http://xxx.com/b'
                     timeStamp: 12345678,
                 }
-            ],
-    screenRecords: /*通过 rrweb 录制的页面信息（需要通过 pack 函数进行压缩，因为在 platform-service 中使用了 unpack 函数）*/,
+            ]
 }
 ```
 
