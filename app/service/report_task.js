@@ -273,7 +273,7 @@ class ReportTaskService extends Service {
 
   // 存储ajax信息
   saveRequests(data, item, slowAjaxTime = 2) {
-    const newUrl = url.parse(item.requestUrl);
+    const newUrl = url.parse(item.resourceUrl);
     const newName = newUrl.protocol + '//' + newUrl.host + newUrl.pathname;
     let duration = Math.abs(item.duration || 0);
     if (duration > 60000) duration = 60000;
@@ -285,7 +285,7 @@ class ReportTaskService extends Service {
     ajaxs.create_time = data.create_time;
     ajaxs.speed_type = speedType;
     ajaxs.url = newName;
-    ajaxs.full_url = item.requestUrl;
+    ajaxs.full_url = item.resourceUrl;
     ajaxs.method = item.method;
     ajaxs.duration = duration;
     ajaxs.decoded_body_size = item.decodedBodySize;
@@ -374,7 +374,7 @@ class ReportTaskService extends Service {
         errors.params = item.data.params;
         errors.method = item.data.method;
         errors.status = item.data.status;
-        errors.text = item.data.text;
+        errors.text = item.data.statusText;
       }
       errors.save();
     });
