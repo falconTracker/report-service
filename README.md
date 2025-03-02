@@ -1,6 +1,6 @@
 # report-service
 
-前端性能监控上报服务，主要用于收集页面上报的数据，收集的数据在 platform-service 平台上展示。
+基于[zanePerfor](https://github.com/wangweianger/zanePerfor)二次开发的前端性能监控上报服务，将原本的项目拆分成平台服务以及上报服务，本项目主要用于收集页面上报的数据，收集的数据在 [platform-service](https://github.com/falconTracker/platform-service) 平台上展示。
 
 ## 安装
 
