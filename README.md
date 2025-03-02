@@ -2,6 +2,8 @@
 
 基于[zanePerfor](https://github.com/wangweianger/zanePerfor)二次开发的前端性能监控上报服务，将原本的项目拆分成平台服务以及上报服务，本项目主要用于收集页面上报的数据，收集的数据在 [platform-service](https://github.com/falconTracker/platform-service) 平台上展示。
 
+可以使用 [@falcontracker/sdk](https://github.com/falconTracker/sdk) 收集页面相关的数据，并用 [@falcontracker/report-plugin](https://github.com/falconTracker/report-plugin) 插件转换成适配 report-service 的接口数据。
+
 ## 安装
 
 ```bash
