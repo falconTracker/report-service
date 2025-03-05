@@ -9,11 +9,11 @@ module.exports = () => {
    **/
   const config = (exports = {});
 
-  config.name = 'hawkeye性能监控上报服务';
+  config.name = 'falcontracker性能监控上报服务';
 
-  config.description = 'hawkeye性能监控上报服务';
+  config.description = 'falcontracker性能监控上报服务';
 
-  config.keys = 'hawkeye_report_service';
+  config.keys = 'falcontracker_report_service';
 
   config.middleware = [];
 
